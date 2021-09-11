@@ -1,7 +1,5 @@
 # PyQmlSortFilterProxyModel
-PySide port of QML exposed QSortFilterProxyModel by oKcerG.
-
-This project is a basic PySide6 port of [https://github.com/oKcerG/SortFilterProxyModel](https://github.com/oKcerG/SortFilterProxyModel).
+This project is a python PySide6 port of [https://github.com/oKcerG/SortFilterProxyModel](https://github.com/oKcerG/SortFilterProxyModel); a QSortFilterProxyModel exposed to QML written by oKcerG.
 
 Please refer to oKcerG's documentation for usage as much of this implementation is based on oKcerG's implementation.
 
@@ -11,7 +9,7 @@ Please refer to oKcerG's documentation for usage as much of this implementation 
 - `QQmlSortFilterProxyModel::componentCompleted`. In PySide6, there is no `Q_INTERFACES` macro enabling a class to inherits from `QSortFilterProxyModel` and `QQmlParserStatus`. Hence inheriting from `QQmlParserStatus` doesn't cause errors, however the `componentCompleted` method is not called.
 - Some of the sorters are not yet ported
 - The `delay` functionality is not ported
-- Attached properties not proted
+- Attached properties not ported
 
 ## Differences - Container Filters
 
@@ -28,6 +26,7 @@ AnyOf {
 
 // python implementation
 AnyOf {
+    // need to assign a list of Filter to the filters property
     filters: [
         RoleFilter {...},
         RegExpFilter {...},
@@ -47,7 +46,7 @@ AnyOf {
 
 # main.py
 import qmlsortfilterproxymodel
-# register qml types before QQmlEngine.load("main.qml") is called
+# register qml types before QQmlApplicationEngine.load("main.qml") is called
 qmlsortfilterproxymodel.registerQmlTypes()
 ```
 
