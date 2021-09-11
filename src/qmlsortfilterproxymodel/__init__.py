@@ -17,16 +17,16 @@ from qmlsortfilterproxymodel.sorters._expressionsorter import ExpressionSorter
 
 
 def registerQmlTypes():
-    qmlRegisterType(QmlSortFilterProxyModel, "SortFilterProxyModel", 1, 0, "SortFilterProxyModel")
+    qmlRegisterType(QmlSortFilterProxyModel, "SortFilterProxyModel", 0, 2, "SortFilterProxyModel")
     # filters
-    qmlRegisterUncreatableType(Filter, "SortFilterProxyModel", 1, 0, "Filter", "Filter is abstract class")
-    qmlRegisterType(ValueFilter, "SortFilterProxyModel", 1, 0, "ValueFilter")
-    qmlRegisterType(AnyOfFilter, "SortFilterProxyModel", 1, 0, "AnyOf")
-    qmlRegisterType(AllOfFilter, "SortFilterProxyModel", 1, 0, "AllOf")
-    qmlRegisterType(ExpressionFilter, "SortFilterProxyModel", 1, 0, "ExpressionFilter")
-    qmlRegisterType(IndexFilter, "SortFilterProxyModel", 1, 0, "IndexFilter")
-    qmlRegisterType(RangeFilter, "SortFilterProxyModel", 1, 0, "RangeFilter")
-    qmlRegisterType(RegExpFilter, "SortFilterProxyModel", 1, 0, "RegExpFilter")
+    qmlRegisterUncreatableType(Filter, "SortFilterProxyModel", 0, 2, "Filter", "Filter is abstract class")
+    qmlRegisterType(ValueFilter, "SortFilterProxyModel", 0, 2, "ValueFilter")
+    qmlRegisterType(AnyOfFilter, "SortFilterProxyModel", 0, 2, "AnyOf")
+    qmlRegisterType(AllOfFilter, "SortFilterProxyModel", 0, 2, "AllOf")
+    qmlRegisterType(ExpressionFilter, "SortFilterProxyModel", 0, 2, "ExpressionFilter")
+    qmlRegisterType(IndexFilter, "SortFilterProxyModel", 0, 2, "IndexFilter")
+    qmlRegisterType(RangeFilter, "SortFilterProxyModel", 0, 2, "RangeFilter")
+    qmlRegisterType(RegExpFilter, "SortFilterProxyModel", 0, 2, "RegExpFilter")
     # sorters
-    qmlRegisterType(RoleSorter, "SortFilterProxyModel", 1, 0, "RoleSorter")
-    qmlRegisterType(ExpressionSorter, "SortFilterProxyModel", 1, 0, "ExpressionSorter")
+    qmlRegisterType(RoleSorter, "SortFilterProxyModel", 0, 2, "RoleSorter")
+    qmlRegisterType(ExpressionSorter, "SortFilterProxyModel", 0, 2, "ExpressionSorter")

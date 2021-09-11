@@ -54,7 +54,7 @@ qmlsortfilterproxymodel.registerQmlTypes()
 
 ```qml
 // SomeFile.qml
-import SortFilterProxyModel 1.0
+import SortFilterProxyModel 0.2
 
 
 SortFilterProxyModel {
