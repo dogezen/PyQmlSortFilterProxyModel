@@ -3,6 +3,8 @@ This project is a python PySide6 port of [https://github.com/oKcerG/SortFilterPr
 
 Please refer to oKcerG's documentation for usage as much of this implementation is based on oKcerG's implementation.
 
+Note: the version of the qml exposed `SortFilterProxyModel` is `0.2` to match that of oKcerG's project so that existing .qml code from your projects can be re-used quickly.
+
 ## Components not (yet) ported
 
 - `ProxyRoles`
